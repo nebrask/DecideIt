@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app-header {
+    background: #6a11cb;
+    padding: 15px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.app-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.notification-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notification-button img {
+    width: 26px;
+    height: 26px;
+}
+
+.home-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.topics-list {
+    list-style: none;
+    padding: 0;
+}
+
+.topic-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.topic-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.message-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.topic-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.topic-summary {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.status-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.status-label.open {
+    background: #28a745;
+    color: white;
+}
+
+.status-label.closed {
+    background: #dc3545;
+    color: white;
+}
+
+.fab-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #ff7f50;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.fab-button:hover {
+    background: #ff5722;
+}
+
+.fab-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button img {
+    width: 24px;
+    height: 24px;
+}

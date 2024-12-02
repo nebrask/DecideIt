@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decision Details</title>
+  <link rel="stylesheet" href="/styles/decision-details.css">
+</head>
+<body>
+    <header class="app-header">
+        <button id="backButton" class="back-button">
+            <img src="https://img.icons8.com/?size=100&id=98961&format=png&color=FFFFFF" alt="Back">
+        </button>
+        <h1 id="decisionTitle" class="app-title">Decision Details</h1>
+    
+        <button id="addUserButton" class="add-user-button">
+            <img src="https://img.icons8.com/?size=100&id=85544&format=png&color=FFFFFF" alt="Add User">
+        </button>
+    
+        <button id="voteButton" class="vote-button">
+            <img src="https://img.icons8.com/?size=100&id=OJTjA9y2VriM&format=png&color=FFFFFF" alt="Vote">
+        </button>
+    
+        <button id="finalizeButton" class="finalize-button">
+            <img src="https://img.icons8.com/?size=100&id=59850&format=png&color=FFFFFF" alt="Finalize Decision">
+        </button>
+    </header>
+    
+    <main class="details-content">
+        <section class="options-section">
+            <ul id="optionsList" class="options-list">
+            </ul>
+        </section>
+
+        <section class="discussion-section">
+            <div id="discussionContainer" class="discussion-container">
+            </div>
+
+            <section id="finalDecisionSection" class="final-decision-section hidden">
+                <h3>Final Decision</h3>
+                <p id="finalDecisionContent">The final decision will be displayed here.</p>
+            </section>
+
+            <div class="discussion-input">
+                <input type="text" id="messageInput" class="message-input" placeholder="Type your message here...">
+                <button id="sendMessageButton" class="send-button">Send</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="addUserPopup" class="popup hidden">
+        <div class="popup-content">
+            <h2 class="popup-title">Add User</h2>
+            <input type="text" id="newUserInput" class="popup-input" placeholder="Enter user email or username">
+            <div class="popup-buttons">
+                <button id="cancelPopupButton" class="popup-button cancel">Cancel</button>
+                <button id="savePopupButton" class="popup-button save">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="votePopup" class="popup hidden">
+        <div class="popup-content">
+            <h2 id="votePopupTitle" class="popup-title">Choose Your Vote</h2>
+            <p id="voteDescription" class="popup-description"></p>
+            <ul id="voteOptionsList" class="vote-options-list"></ul>
+            <div class="popup-buttons">
+                <button id="cancelVoteButton" class="popup-button cancel">Cancel</button>
+                <button id="submitVoteButton" class="popup-button save">Submit Vote</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/decision-details.js"></script>
+</body>
+</html>

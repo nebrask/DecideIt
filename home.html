@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DecideIt - Home</title>
+  <link rel="stylesheet" href="/styles/home.css">
+</head>
+<body>
+  <header class="app-header">
+    <button id="backButton" class="back-button">
+      <img src="https://img.icons8.com/?size=100&id=1mOqz13Tpqsd&format=png&color=FFFFFF" alt="Back">
+    </button>
+    <h1 class="app-title">Group Decision</h1>
+    
+    <button id="notificationButton" class="notification-button">
+      <img src="https://img.icons8.com/?size=100&id=849XkTbsgJDo&format=png&color=FFFFFF" alt="Notifications">
+    </button>
+  </header>
+  
+  <main class="home-content">
+    <ul class="topics-list">
+      <li class="topic-item" onclick="viewDetails('Movie Night')">
+        <div class="card-content">
+          <img src="https://img.icons8.com/?size=100&id=143&format=png&color=7950F2" alt="Messages" class="message-icon">
+          <div class="card-text">
+            <h3 class="topic-title">Movie Night</h3>
+            <p class="topic-summary">4 participants</p>
+          </div>
+          <span class="status-label closed">Closed</span>
+        </div>
+      </li>
+    </ul>
+
+    <button class="fab-button" onclick="createDecision()">
+      <img src="https://img.icons8.com/?size=100&id=95779&format=png&color=FFFFFF" alt="Create" class="fab-icon">
+    </button>
+  </main>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Decision</title>
+  <link rel="stylesheet" href="/styles/create-decision.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title">Create Decision</h1>
+  </header>
+
+  <main class="create-content">
+    <form id="decisionForm" class="decision-form">
+      <div class="form-group">
+        <label for="decisionTitle" class="form-label">Title</label>
+        <input type="text" id="decisionTitle" class="form-input" placeholder="Enter decision title" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="decisionDescription" class="form-label">Description</label>
+        <textarea id="decisionDescription" class="form-textarea" placeholder="Enter description (optional)"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label class="form-label">Options</label>
+        <div class="add-option">
+            <input type="text" id="newOption" class="form-input" placeholder="Enter new option">
+            <button type="button" id="addOptionButton" class="add-icon-button">
+              <img src="https://img.icons8.com/?size=100&id=95779&format=png&color=FFFFFF" alt="Add" class="add-icon">
+            </button>
+          </div>          
+        <div id="optionsContainer" class="options-container"></div>
+      </div>
+    </form>
+  
+    <div class="action-buttons">
+      <button type="button" id="cancelButton" class="action-button cancel">Cancel</button>
+      <button type="submit" id="saveButton" class="action-button save">Save</button>
+    </div>
+  </main>
+  
+
+  <script src="/js/create-decision.js"></script>
+</body>
+</html>
