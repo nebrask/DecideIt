@@ -3,6 +3,15 @@
 DecideIt is a mobile-friendly web application that allows users to create discussions, vote on options, and finalize decisions within a group. The app simulates a group decision-making process with messaging, voting, and finalizing features.
 
 
+## Demo Video
+
+You can watch the demo video below:
+
+<video width="640" height="360" controls>
+  <source src="/video/decideit_demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Features
 
 - **Create Decisions**: Users can create group decisions with customizable options.

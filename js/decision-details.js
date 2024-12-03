@@ -21,21 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
             { 
                 content: `
                     <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=1A1A1A" alt="User Icon" class="user-icon"> 
-                    John Doe has joined the chat
+                    JohnDoe has joined the chat
                 `, 
                 isSystem: true 
             },
             { 
                 content: `
                     <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=1A1A1A" alt="User Icon" class="user-icon"> 
-                    Jane Smith has joined the chat
+                    JaneS has joined the chat
                 `, 
                 isSystem: true 
             },
             { 
                 content: `
                     <img src="https://img.icons8.com/?size=100&id=98957&format=png&color=1A1A1A" alt="User Icon" class="user-icon"> 
-                    Alex Brown has joined the chat
+                    AlexB27 has joined the chat
                 `, 
                 isSystem: true 
             },
@@ -47,22 +47,22 @@ document.addEventListener('DOMContentLoaded', () => {
             { 
                 content: `How about we watch comedy🤔`, 
                 isSystem: false, 
-                userName: "John Doe" 
+                userName: "JohnDoe" 
             },
             { 
                 content: `It would be great to spend time with everyone laughing and having fun`, 
                 isSystem: false, 
-                userName: "John Doe" 
+                userName: "JohnDoe" 
             },
             { 
                 content: `I'm in for a drama!`, 
                 isSystem: false, 
-                userName: "Jane Smith" 
+                userName: "JaneS" 
             },
             { 
                 content: `I'm leaning towards comedy also but I'm fine for whatever. Lets all vote and decide!`, 
                 isSystem: false, 
-                userName: "Alex Brown " 
+                userName: "AlexB27" 
             }
         ];
         
@@ -305,7 +305,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
 
             saveDecisionToLocalStorage();
-            alert(`User "${newUser}" added to the discussion!`);
             newUserInput.value = '';
             addUserPopup.classList.add('hidden');
             renderMessages();

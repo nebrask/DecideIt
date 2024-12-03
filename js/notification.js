@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ],
         'Action Required': [
             'Your decision topic is up for voting!',
-            'Please finalize your decision before soon.'
+            'Please finalize your decision soon.'
         ],
         'System Update': [
             'System maintenance is scheduled for tomorrow.',
