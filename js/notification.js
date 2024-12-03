@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const notifications = {
         'New Update': [
-            'A new update is available for your discussion.',
-            'Your discussion has been updated with new changes.'
+            'A new update is available for your decision topic.',
+            'Your decision has been updated with new changes.'
         ],
         'New Message': [
             'You have a new message!',
-            'Someone has commented on your discussion.'
+            'Someone has commented on your decision topic.'
         ],
         'Action Required': [
-            'Your discussion is up for voting!',
+            'Your decision topic is up for voting!',
             'Please finalize your decision before soon.'
         ],
         'System Update': [
@@ -21,12 +21,12 @@ document.addEventListener('DOMContentLoaded', () => {
             'New features have been added to the platform.'
         ],
         'New Activity': [
-            'Someone has voted on your discussion topic.',
-            'A new user has joined the discussion.'
+            'Someone has voted on your decision topic.',
+            'A new user has joined the decision.'
         ],
         'Reminder': [
             'Reminder: you need to vote soon',
-            'Don’t forget to check the latest updates on your discussion.'
+            'Don’t forget to check the latest updates on your decision topic.'
         ]
     };
 
